@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kazan İfşa</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    /* Üst başlık */
+    .ust-menu {
+      background-color: #ff7a00;
+      color: white;
+      padding: 18px;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Sayfa düzeni */
+    .sayfa-duzeni {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 200px; /* düzeltildi */
+      margin-top: 35px;
+      padding: 0 15px;
+      flex-wrap: nowrap;
+    }
+
+    /* Reklamlar */
+    .reklam {
+      width: 300px; /* küçültüldü */
+      position: sticky;
+      top: 20px;
+    }
+
+    .reklam img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Haber kutusu */
+    .haber-kutusu {
+      width: 700px;
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .kategori {
+      color: #ff7a00;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .tarih {
+      color: gray;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .haber-foto {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    /* Mobil uyum */
+    @media (max-width: 900px) {
+      .reklam {
+        display: none;
+      }
+
+      .haber-kutusu {
+        width: 100%;
+      }
+
+      .sayfa-duzeni {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Üst başlık -->
+  <div class="ust-menu">
+    KAZAN İFŞA
+  </div>
+
+  <div class="sayfa-duzeni">
+
+    <!-- Sol reklam -->
+    <div class="reklam">
+      <img src="kadın.jfif" alt="Sol reklam">
+    </div>
+
+    <!-- Haber -->
+    <div class="haber-kutusu">
+
+      <div class="kategori">Son Dakika</div>
+
+      <h1>Kazan'da Bir İfşa Daha!</h1>
+
+      <div class="tarih">24 Haziran 2026 - 9:30</div>
+
+      <img class="haber-foto" src="tunag.jpg" alt="Haber fotoğrafı">
+
+      <p>
+        Ankara'nın Kazan ilinde bir ifşa daha ortaya çıktı.
+        Tuna isimli vatandaşın saat sabah 9:30 civarlarında ayaklarınında göründüğü,adeta azdırıcı bir ifşası ortaya çıktı.
+      </p>
+
+      <p>
+        Ünlü yayıncı Sıla Ertaşın ifşayı gördüğündeki tepkisi viral oldu.
+        Ve araştırmalara göre ifşanın yapay zekaya ait olmadığı gözlemlendi.
+      </p>
+
+      <p>
+      Son zamanlardaki açık ara en azdırıcı ayaklar,Teşekkürler Tuna!
+      </p>
+
+    </div>
+
+    <!-- Sağ reklam -->
+    <div class="reklam">
+      <img src="yeah.jfif" alt="Sağ reklam">
+    </div>
+
+  </div>
+
+</body>
+</html>
